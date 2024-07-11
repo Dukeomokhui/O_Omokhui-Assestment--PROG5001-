@@ -14,7 +14,11 @@ public class Student_scores {
             System.out.print("What is the name of the Assignment: ");
             //Enabling input from user
             String whatIsAssignmentName = scanner.nextLine();
+            //Trim function to get rid of unwanted space characters
             System.out.println("The name of your Assignment is " + whatIsAssignmentName.trim());
+            
+            System.out.println("Input marks for 30 students in " + whatIsAssignmentName + ": ");
+            
             
     }
 }

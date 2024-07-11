@@ -8,6 +8,7 @@
 import java.util.Scanner;
 
 public class Student_scores {
+    static final int numberOfStudents = 30;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         

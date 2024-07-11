@@ -19,6 +19,12 @@ public class Student_scores {
             
             System.out.println("Input marks for 30 students in " + whatIsAssignmentName + ": ");
             
+            for(int i = 0; i < numberOfStudents; i++){
+            Scanner scanner_1 = new Scanner(System.in);
+            marks[i] = scanner_1.nextFloat();
+        }
+
+            
             
     }
 }

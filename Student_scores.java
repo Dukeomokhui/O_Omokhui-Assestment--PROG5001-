@@ -12,6 +12,8 @@ public class Student_scores {
         Scanner scanner = new Scanner(System.in);
         
             System.out.print("What is the name of the Assignment: ");
+            //Enabling input from user
             String whatIsAssignmentName = scanner.nextLine();
+            
     }
 }

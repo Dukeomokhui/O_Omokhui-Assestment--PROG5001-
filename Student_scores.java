@@ -14,6 +14,7 @@ public class Student_scores {
             System.out.print("What is the name of the Assignment: ");
             //Enabling input from user
             String whatIsAssignmentName = scanner.nextLine();
+            System.out.println("The name of your Assignment is " + whatIsAssignmentName.trim());
             
     }
 }

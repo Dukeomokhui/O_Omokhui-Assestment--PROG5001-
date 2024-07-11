@@ -9,6 +9,8 @@ import java.util.Scanner;
 
 public class Student_scores {
     static final int numberOfStudents = 30;
+    static float[] marks = new float[numberOfStudents];
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -25,7 +27,11 @@ public class Student_scores {
             marks[i] = scanner_1.nextFloat();
         }
 
+            System.out.println("Entered marks: ");
+            for(int j = 0; j < numberOfStudents; j++){
+            System.out.println(marks[j]);
             
-            
+        }
     }
+    
 }

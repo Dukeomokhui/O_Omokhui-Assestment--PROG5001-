@@ -41,6 +41,7 @@ public class Student_scores {
                     largest = marks[k];
                 }
             }
+            // problem: it displays negative numbers. gotta fix that.
             for (int l = 0; l < marks.length; l++){
                 if (marks[l] < smallest){
                     smallest = marks[l];

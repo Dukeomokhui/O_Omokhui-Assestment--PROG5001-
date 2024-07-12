@@ -40,5 +40,8 @@ public class Student_scores {
                     largest = marks[k];
                 }
             }
+            for (int l = 0; l < marks.length; l++){
+            
+            }
     }
 }

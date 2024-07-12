@@ -41,7 +41,9 @@ public class Student_scores {
                 }
             }
             for (int l = 0; l < marks.length; l++){
-            
+                if (marks[l] < smallest){
+                    smallest = marks[l];
             }
+        }
     }
 }

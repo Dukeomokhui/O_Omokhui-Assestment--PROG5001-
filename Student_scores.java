@@ -35,10 +35,10 @@ public class Student_scores {
             
         }
             // algorithm for highest marks of marks[] array
-    }       for(int k = 0; k < marks.length; k++){
+          for(int k = 0; k < marks.length; k++){
                 if (marks[k] > largest){
                     largest = marks[k];
                 }
             }
-    
+    }
 }

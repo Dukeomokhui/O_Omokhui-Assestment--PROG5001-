@@ -12,10 +12,10 @@ public class Student_scores {
     static float[] marks = new float[numberOfStudents];
     static float largest = marks[0];
     static float smallest = marks[0];
-    float sum = 0;
      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        float sum = 0;
         
             System.out.print("What is the name of the Assignment: ");
             //Enabling input from user
@@ -53,5 +53,6 @@ public class Student_scores {
                 sum += n;
             }
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
+        System.out.println("The mean of the scores is :" + ((double)sum/marks.length));
     }
 }

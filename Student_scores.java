@@ -48,7 +48,9 @@ public class Student_scores {
         
                 }
         }
-        
+            for (float n : marks){
+                sum += n;
+            }
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
     }
 }

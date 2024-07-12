@@ -10,7 +10,8 @@ import java.util.Scanner;
 public class Student_scores {
     static final int numberOfStudents = 30;
     static float[] marks = new float[numberOfStudents];
-    
+    static float largest = marks[0];
+     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         

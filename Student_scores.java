@@ -33,8 +33,11 @@ public class Student_scores {
             System.out.println(marks[j]);
             
         }
+            // algorithm for highest marks of marks[] array
     }       for(int k = 0; k < marks.length; k++){
-        
+                if (marks[k] > largest){
+                    largest = marks[k];
+                }
             }
     
 }

@@ -40,13 +40,15 @@ public class Student_scores {
                 if (marks[k] > largest){
                     largest = marks[k];
                 }
-            }
+        }
             // problem: it displays negative numbers. gotta fix that.
             for (int l = 0; l < marks.length; l++){
                 if (marks[l] < smallest){
                     smallest = marks[l];
-            }
+        
+                }
         }
+        
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
     }
 }

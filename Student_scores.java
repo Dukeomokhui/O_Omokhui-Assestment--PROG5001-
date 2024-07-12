@@ -25,6 +25,7 @@ public class Student_scores {
             for(int i = 0; i < numberOfStudents; i++){
             Scanner scanner_1 = new Scanner(System.in);
             marks[i] = scanner_1.nextFloat();
+            // write an error message for wrong input
         }
 
             System.out.println("Entered marks: ");

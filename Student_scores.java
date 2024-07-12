@@ -46,5 +46,6 @@ public class Student_scores {
                     smallest = marks[l];
             }
         }
+        System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
     }
 }

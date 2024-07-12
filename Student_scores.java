@@ -33,6 +33,8 @@ public class Student_scores {
             System.out.println(marks[j]);
             
         }
-    }
+    }       for(int k = 0; k < marks.length; k++){
+        
+            }
     
 }

@@ -12,6 +12,7 @@ public class Student_scores {
     static float[] marks = new float[numberOfStudents];
     static float largest = marks[0];
     static float smallest = marks[0];
+    float sum = 0;
      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

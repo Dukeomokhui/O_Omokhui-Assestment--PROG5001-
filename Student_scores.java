@@ -29,7 +29,8 @@ public class Student_scores {
             Scanner scanner_1 = new Scanner(System.in);
             marks[i] = scanner_1.nextFloat();
             
-            if (mark < 0 || mark > 30)
+            if (mark < 0 || mark > 30){
+                 System.out.println("Invalid marks");
             // write an error message for wrong input
         }
 

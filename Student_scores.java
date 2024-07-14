@@ -31,6 +31,8 @@ public class Student_scores {
             
             if (mark < 0 || mark > 30){
                  System.out.println("Invalid marks");
+                  i--;
+                    } else {
             // write an error message for wrong input
         }
 

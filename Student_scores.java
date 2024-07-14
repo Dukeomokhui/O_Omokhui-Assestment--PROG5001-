@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 public class Student_scores {
-    static final int numberOfStudents = 30;
+    static final int numberOfStudents = 6;
     static float[] marks = new float[numberOfStudents];
     static float largest = marks[0];
     static float smallest = marks[0];

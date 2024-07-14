@@ -60,10 +60,8 @@ public class Student_scores {
              for (int i = 0; i < numberOfStudents; i++) {
             sum = sum + marks[i];
         }
-            
-            for (float n : marks){
-                sum += n;
-            }
+         float mean = sum / numberOfStudents;
+
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
         System.out.println("The mean of the scores is :" + ((double)sum/marks.length));
     }

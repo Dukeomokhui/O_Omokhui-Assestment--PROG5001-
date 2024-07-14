@@ -36,8 +36,7 @@ public class Student_scores {
                         marks[i] =mark;
                     }
                 }
-            // write an error message for wrong input
-        
+                
 
             System.out.println("Entered marks: ");
             for(int j = 0; j < numberOfStudents; j++){

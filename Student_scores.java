@@ -61,6 +61,11 @@ public class Student_scores {
             sum = sum + marks[i];
         }
          float mean = sum / numberOfStudents;
+         
+         float summedDiff = 0;
+         for (int i = 0; i < numberOfStudents; i++){
+            summedDiff = summedDiff + (marks[i] - mean)*(marks[i] - mean);
+        }
 
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
         System.out.println("The mean of the scores is :" + ((double)sum/marks.length));

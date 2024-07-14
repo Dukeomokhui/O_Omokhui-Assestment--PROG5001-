@@ -57,6 +57,10 @@ public class Student_scores {
         }
             float sum = 0;
             
+             for (int i = 0; i < numberOfStudents; i++) {
+            sum = sum + marks[i];
+        }
+            
             for (float n : marks){
                 sum += n;
             }

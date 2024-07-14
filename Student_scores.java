@@ -66,8 +66,12 @@ public class Student_scores {
          for (int i = 0; i < numberOfStudents; i++){
             summedDiff = summedDiff + (marks[i] - mean)*(marks[i] - mean);
         }
+         summedDiff = summedDiff / numberOfStudents;
+
+        float standardDeviation = (float) Math.sqrt(summedDiff);
 
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
-        System.out.println("The mean of the scores is :" + ((double)sum/marks.length));
+        System.out.println("The mean of the scores is :" + mean);
+        System.out.println("Standard Deviation is " + standardDeviation);
     }
 }

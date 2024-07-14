@@ -28,6 +28,8 @@ public class Student_scores {
             for(int i = 0; i < numberOfStudents; i++){
             Scanner scanner_1 = new Scanner(System.in);
             marks[i] = scanner_1.nextFloat();
+            
+            if (mark < 0 || mark > 30)
             // write an error message for wrong input
         }
 

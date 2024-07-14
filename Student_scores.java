@@ -15,7 +15,6 @@ public class Student_scores {
      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        float sum = 0;
         
             System.out.print("What is the name of the Assignment: ");
             //Enabling input from user
@@ -56,6 +55,8 @@ public class Student_scores {
         
                 }
         }
+            float sum = 0;
+            
             for (float n : marks){
                 sum += n;
             }

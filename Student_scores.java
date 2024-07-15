@@ -8,12 +8,11 @@
 import java.util.Scanner;
 
 public class Student_scores {
-    static final int numberOfStudents = 6;
-    static float[] marks = new float[numberOfStudents];
-    static float largest = marks[0];
-    static float smallest = marks[0];
      
     public static void main(String[] args) {
+    int numberOfStudents = 5;
+    float[] marks = new float[numberOfStudents];
+
         Scanner scanner = new Scanner(System.in);
         
             System.out.print("What is the name of the Assignment: ");
@@ -26,7 +25,7 @@ public class Student_scores {
             
             for(int i = 0; i < numberOfStudents; i++){
             Scanner scanner_1 = new Scanner(System.in);
-            float mark = scanner_1.nextFloat();
+            int mark = scanner_1.nextInt();
             // try to write an error mesage code for wrong input, if it's a string and not an integer
             if (mark < 0 || mark > 30){
                  System.out.println("Invalid mark. Please enter a number from 0 to 30.");
@@ -43,7 +42,11 @@ public class Student_scores {
             
         }
             // algorithm for highest marks of marks[] array
-          for(int i = 0; i < marks.length; i++){
+            
+            float largest = marks[0];
+            float smallest = marks[0];
+            
+            for(int i = 1; i < marks.length; i++){
                 if (marks[i] > largest){
                     largest = marks[i];
                 }
@@ -53,7 +56,6 @@ public class Student_scores {
             for (int i = 0; i < marks.length; i++){
                 if (marks[i] < smallest){
                     smallest = marks[i];
-        
                 }
         }
             float sum = 0;
@@ -74,5 +76,6 @@ public class Student_scores {
         System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
         System.out.println("The mean of the scores is :" + mean);
         System.out.println("Standard Deviation is " + standardDeviation);
+        
     }
 }

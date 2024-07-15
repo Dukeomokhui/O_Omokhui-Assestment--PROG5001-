@@ -10,9 +10,9 @@ public class Student_scores {
         
         System.out.print("What is the name of the Assignment: ");
         String whatIsAssignmentName = scanner.nextLine().trim(); //Trim function to get rid of unwanted space characters
-        System.out.println("The name of the Assignment is " + whatIsAssignmentName);
+        System.out.println("The name of the Assignment is " + whatIsAssignmentName + ".");
         
-        System.out.println("Input marks for " + numberOfStudents + " students in " + whatIsAssignmentName + ": ");
+        System.out.println("Please input marks for " + numberOfStudents + " students in " + whatIsAssignmentName + "Assignment: ");
         
         
         for(int i = 0; i < numberOfStudents; i++) {
@@ -20,7 +20,7 @@ public class Student_scores {
             
             while (!validInput) {
                 try {
-                    System.out.print("Enter mark for student " + (i + 1) + ": ");
+                    System.out.print("Enter marks for student " + (i + 1) + ": ");
                     int mark = scanner.nextInt(); // Algorithm to identify a mark to a specific student e.g student 1 = 2
                     // input validation for a specific range of marks
                     if (mark < 0 || mark > 30) {
@@ -30,7 +30,7 @@ public class Student_scores {
                         validInput = true;
                     }
                 } catch (InputMismatchException e) {
-                    System.out.println("Invalid input. Please enter a valid integer.");
+                    System.out.println("Invalid input. Please enter a number from 0 to 30. Do not enter a word.");
                     scanner.next(); // Clear the previous invalid input
                 } //Algorithm to handle the input error 
             }
@@ -68,7 +68,8 @@ public class Student_scores {
         float standardDeviation = (float) Math.sqrt(summedDiff / numberOfStudents);
 
         // Output results of my calculations
-        System.out.println("The highest score is " + largest + " and the lowest score is " + smallest);
+        System.out.println("The highest score out of the 30 students is " + largest);
+        System.out.println("The lowest score out of the 30 students is " + smallest);
         System.out.println("The mean of the scores is: " + mean);
         System.out.println("Standard Deviation is: " + standardDeviation);
         

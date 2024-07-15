@@ -21,7 +21,7 @@ public class Student_scores {
             String whatIsAssignmentName = scanner.nextLine();
             //Trim function to get rid of unwanted space characters
             System.out.println("The name of your Assignment is " + whatIsAssignmentName.trim());
-            // write an error mesage code for wrong input
+            // try to write an error mesage code for wrong input
             System.out.println("Input marks for 30 students in " + whatIsAssignmentName + ": ");
             
             for(int i = 0; i < numberOfStudents; i++){
@@ -49,6 +49,7 @@ public class Student_scores {
                 }
         }
             // problem: it displays negative numbers. gotta fix that.
+            // problem: it always displays 0 as the smallest number.
             for (int l = 0; l < marks.length; l++){
                 if (marks[l] < smallest){
                     smallest = marks[l];

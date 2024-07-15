@@ -21,13 +21,13 @@ public class Student_scores {
             String whatIsAssignmentName = scanner.nextLine();
             //Trim function to get rid of unwanted space characters
             System.out.println("The name of your Assignment is " + whatIsAssignmentName.trim());
-            // try to write an error mesage code for wrong input
+            
             System.out.println("Input marks for 30 students in " + whatIsAssignmentName + ": ");
             
             for(int i = 0; i < numberOfStudents; i++){
             Scanner scanner_1 = new Scanner(System.in);
             float mark = scanner_1.nextFloat();
-            
+            // try to write an error mesage code for wrong input, if it's a string and not an integer
             if (mark < 0 || mark > 30){
                  System.out.println("Invalid marks");
                   i--;

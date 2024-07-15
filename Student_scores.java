@@ -20,7 +20,7 @@ public class Student_scores {
             //Enabling input from user
             String whatIsAssignmentName = scanner.nextLine();
             //Trim function to get rid of unwanted space characters
-            System.out.println("The name of your Assignment is " + whatIsAssignmentName.trim());
+            System.out.println("The name of the Assignment is " + whatIsAssignmentName.trim());
             
             System.out.println("Input marks for 30 students in " + whatIsAssignmentName + ": ");
             
@@ -38,21 +38,21 @@ public class Student_scores {
                 
 
             System.out.println("Entered marks of 30 students: ");
-            for(int j = 0; j < numberOfStudents; j++){
-            System.out.println(marks[j]);
+            for(int i = 0; i < numberOfStudents; i++){
+            System.out.println(marks[i]);
             
         }
             // algorithm for highest marks of marks[] array
-          for(int k = 0; k < marks.length; k++){
-                if (marks[k] > largest){
-                    largest = marks[k];
+          for(int i = 0; i < marks.length; i++){
+                if (marks[i] > largest){
+                    largest = marks[i];
                 }
         }
             // problem: it displays negative numbers. gotta fix that.
             // problem: it always displays 0 as the smallest number.
-            for (int l = 0; l < marks.length; l++){
-                if (marks[l] < smallest){
-                    smallest = marks[l];
+            for (int i = 0; i < marks.length; i++){
+                if (marks[i] < smallest){
+                    smallest = marks[i];
         
                 }
         }

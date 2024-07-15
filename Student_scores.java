@@ -12,7 +12,7 @@ public class Student_scores {
         String whatIsAssignmentName = scanner.nextLine().trim(); //Trim function to get rid of unwanted space characters
         System.out.println("The name of the Assignment is " + whatIsAssignmentName + ".");
         
-        System.out.println("Please input marks for " + numberOfStudents + " students in " + whatIsAssignmentName + "Assignment: ");
+        System.out.println("Please input marks for " + numberOfStudents + " students in " + whatIsAssignmentName + " Assignment: ");
         
         
         for(int i = 0; i < numberOfStudents; i++) {

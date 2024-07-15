@@ -6,6 +6,7 @@
  * @version (a version number or a date)
  */
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Student_scores {
      
@@ -24,6 +25,12 @@ public class Student_scores {
             System.out.println("Input marks for 30 students in " + whatIsAssignmentName + ": ");
             
             for(int i = 0; i < numberOfStudents; i++){
+              boolean validInput = false;
+              while (!validInput){
+                  try{
+                      System.out.println("Enter marks)
+                  }
+              }
             Scanner scanner_1 = new Scanner(System.in);
             int mark = scanner_1.nextInt();
             // try to write an error mesage code for wrong input, if it's a string and not an integer

@@ -5,7 +5,7 @@ public class Student_scores {
      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Enables input from the user through the computers portal
-        int numberOfStudents = 5; // variable for number of students
+        int numberOfStudents = 30; // variable for number of students
         float[] marks = new float[numberOfStudents]; //Array called marks to contain input of numbers 
         
         System.out.print("What is the name of the Assignment: ");

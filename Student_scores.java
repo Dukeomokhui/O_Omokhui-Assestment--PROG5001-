@@ -29,7 +29,7 @@ public class Student_scores {
             float mark = scanner_1.nextFloat();
             // try to write an error mesage code for wrong input, if it's a string and not an integer
             if (mark < 0 || mark > 30){
-                 System.out.println("Invalid marks");
+                 System.out.println("Invalid mark. Please enter a number from 0 to 30.");
                   i--;
                     } else {
                         marks[i] =mark;
@@ -37,7 +37,7 @@ public class Student_scores {
                 }
                 
 
-            System.out.println("Entered marks: ");
+            System.out.println("Entered marks of 30 students: ");
             for(int j = 0; j < numberOfStudents; j++){
             System.out.println(marks[j]);
             

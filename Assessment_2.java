@@ -8,6 +8,10 @@ public class Assessment_2 {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
             String unitName = null;
+            
+            if ((line = reader.readLine()) != null) {
+            }else {
+            }
         }
     }
 }

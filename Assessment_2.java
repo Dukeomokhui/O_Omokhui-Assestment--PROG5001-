@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.FileReader;
+import java.io.BufferedReader;
 
 public class Assessment_2 {
    public static void main(String[] args) {

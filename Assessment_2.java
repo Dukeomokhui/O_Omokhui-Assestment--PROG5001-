@@ -20,6 +20,10 @@ public class Assessment_2 {
              System.out.println("Student Marks:");
              while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(":");
+                if (parts.length == 5) {
+                    String studentName = parts[0].trim();
+                    String marks = parts[1].trim();
+                    System.out.println(studentName + ": " + marks);
         }
     }
 }

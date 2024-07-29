@@ -18,6 +18,8 @@ public class Assessment_2 {
             }
             
              System.out.println("Student Marks:");
+             while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(":");
         }
     }
 }

@@ -24,8 +24,12 @@ public class Assessment_2 {
                     String studentName = parts[0].trim();
                     String marks = parts[1].trim();
                     System.out.println(studentName + ": " + marks);
-                } else {System.out.println("Incorrect format for line: " + line);
+                } else {
+                    System.out.println("Incorrect format for line: " + line);
                 }
+        }
+    } catch (IOException e) {
+            System.err.println("An error occurred while reading the file: " + e.getMessage());
         }
     }
 }

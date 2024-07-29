@@ -13,6 +13,8 @@ public class Assessment_2 {
                 unitName = line.split(":")[1].trim();
                 System.out.println("Unit Name: " + unitName);
             }else {
+                 System.out.println("The file is empty or is wrongly formatted.");
+                return;
             }
         }
     }

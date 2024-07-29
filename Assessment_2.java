@@ -10,6 +10,8 @@ public class Assessment_2 {
             String unitName = null;
             
             if ((line = reader.readLine()) != null) {
+                unitName = line.split(":")[1].trim();
+                System.out.println("Unit Name: " + unitName);
             }else {
             }
         }

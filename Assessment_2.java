@@ -16,6 +16,8 @@ public class Assessment_2 {
                  System.out.println("The file is empty or is wrongly formatted.");
                 return;
             }
+            
+             System.out.println("Student Marks:");
         }
     }
 }

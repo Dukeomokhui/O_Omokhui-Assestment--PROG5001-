@@ -15,6 +15,8 @@ public class Assessment_2 {
             System.out.print("Please enter the name of the text file: "); // Gets the filename
             String filename = consoleReader.readLine().trim();// Stores the value in a string. Trims the input of unnecessary spaces
             
+            if (filename.isEmpty()) {
+                System.out.println("No filename provided. Exiting..."); // Error check if there is no input provided
             
             String line;
             String unitName = null;

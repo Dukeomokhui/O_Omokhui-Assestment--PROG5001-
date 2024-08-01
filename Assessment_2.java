@@ -18,7 +18,12 @@ public class Assessment_2 {
         StudentRecord(String fullName, String studentId, double mark1, double mark2, double mark3, double total) {
             this.fullName = fullName;
             this.studentId = studentId;
+            this.mark1 = mark1;
+            this.mark2 = mark2;
+            this.mark3 = mark3;
+            this.total = total;
         }
+    }
    public static void main(String[] args) {
         // Create BufferedReader to read input from the console
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {

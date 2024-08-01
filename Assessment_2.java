@@ -75,6 +75,12 @@ public class Assessment_2 {
                     String a2 = parts[4].trim();
                     String a3 = (parts.length > 5) ? parts[5].trim() : "";
 
+                     // Parse marks and calculate total
+                    double mark1 = parseMark(a1);
+                    double mark2 = parseMark(a2);
+                    double mark3 = parseMark(a3);
+                    double total = mark1 + mark2 + mark3;
+
     }    catch (IOException e) {
             System.err.println("An error occurred while reading the file: " + e.getMessage());
         }

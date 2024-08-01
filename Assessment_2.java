@@ -35,6 +35,10 @@ public class Assessment_2 {
             }else {
                  System.out.println("The file is empty or is wrongly formatted.");
             }
+            // Process student records
+            System.out.println("\nStudent Records:");
+            System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
+                        "Name", "Student ID", "A1", "A2", "A3", "Total");
             
             
     } catch (IOException e) {

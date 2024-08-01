@@ -20,7 +20,8 @@ public class Assessment_2 {
                 System.out.println("No filename provided. Exiting..."); // Error check if there is no input provided
                 return;
             }
-            
+            // Reads the file and process student records
+        try (BufferedReader fileReader = new BufferedReader(new FileReader(filename))) {
             String line;
             String unitName = null;
             

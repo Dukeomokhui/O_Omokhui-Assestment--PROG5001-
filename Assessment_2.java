@@ -10,8 +10,11 @@ public class Assessment_2 {
         String studentId;
         }
    public static void main(String[] args) {
+        // Create BufferedReader to read input from the console
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
-            System.out.print("Please enter the name of the text file: ");
+            System.out.print("Please enter the name of the text file: "); // Gets the filename
+            String filename = consoleReader.readLine().trim();// Stores the value in a string. Trims the input of unnecessary spaces
+            
             
             String line;
             String unitName = null;

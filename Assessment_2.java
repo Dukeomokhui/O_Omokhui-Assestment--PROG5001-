@@ -95,7 +95,10 @@ public class Assessment_2 {
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
             return;
-            }            
+            }
+            
+        // Prompt the user for a threshold value
+        }
     }
 }
 

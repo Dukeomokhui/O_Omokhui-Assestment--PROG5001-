@@ -65,7 +65,16 @@ public class Assessment_2 {
                     
                 // Split the line by commas
                 String[] parts = line.split(",");
-                    
+                
+                // Check if the line has the expected number of parts
+                if (parts.length >= 5) {
+                    String lastName = parts[0].trim();
+                    String firstName = parts[1].trim();
+                    String studentId = parts[2].trim();
+                    String a1 = parts[3].trim();
+                    String a2 = parts[4].trim();
+                    String a3 = (parts.length > 5) ? parts[5].trim() : "";
+
     }    catch (IOException e) {
             System.err.println("An error occurred while reading the file: " + e.getMessage());
         }

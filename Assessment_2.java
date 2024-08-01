@@ -26,9 +26,8 @@ public class Assessment_2 {
             String line;
             String unitName = null;
             
-            
-            
-            if ((line = reader.readLine()) != null) {
+            //Read the first line to get the unit name
+             if ((line = fileReader.readLine()) != null) {
                 unitName = line.split(":")[1].trim();
                 System.out.println("Unit Name: " + unitName);
             }else {

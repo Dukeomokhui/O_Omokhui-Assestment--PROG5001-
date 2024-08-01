@@ -80,6 +80,10 @@ public class Assessment_2 {
                     double mark2 = parseMark(a2);
                     double mark3 = parseMark(a3);
                     double total = mark1 + mark2 + mark3;
+                    
+                    // Add student record to the list
+                    studentRecords.add(new StudentRecord(
+                                firstName + " " + lastName, studentId, mark1, mark2, mark3, total));
 
     }    catch (IOException e) {
             System.err.println("An error occurred while reading the file: " + e.getMessage());

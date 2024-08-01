@@ -17,6 +17,8 @@ public class Assessment_2 {
             
             if (filename.isEmpty()) {
                 System.out.println("No filename provided. Exiting..."); // Error check if there is no input provided
+                return;
+            }
             
             String line;
             String unitName = null;

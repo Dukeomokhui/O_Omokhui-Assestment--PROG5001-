@@ -88,9 +88,14 @@ public class Assessment_2 {
                     // Print the student record
                     System.out.printf("%-30s %-10s %-5.1f %-5.1f %-5.1f %-7.1f%n",
                                 firstName + " " + lastName, studentId, mark1, mark2, mark3, total);
-    }    catch (IOException e) {
-            System.err.println("An error occurred while reading the file: " + e.getMessage());
-        }
+                    } else {
+                        System.out.println("Unexpected format for student record: " + line);
+                    }
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+            return;
+            }            
     }
 }
 

@@ -13,6 +13,11 @@ public class Assessment_2 {
         double mark2;
         double mark3;
         double total;
+        
+            
+        StudentRecord(String fullName, String studentId, double mark1, double mark2, double mark3, double total) {
+            this.fullName = fullName;
+            this.studentId = studentId;
         }
    public static void main(String[] args) {
         // Create BufferedReader to read input from the console

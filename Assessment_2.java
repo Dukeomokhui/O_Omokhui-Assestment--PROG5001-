@@ -38,7 +38,7 @@ public class Assessment_2 {
             // Process student records
             System.out.println("\nStudent Records:");
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
-                        "Name", "Student ID", "A1", "A2", "A3", "Total");
+                        "Name", "Student ID", "A1", "A2", "A3", "Total"); // Print out String in a specific format
             
             
     } catch (IOException e) {

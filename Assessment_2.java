@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.io.FileReader;
 import java.io.BufferedReader;
 
+
 public class Assessment_2 {
     
      static class StudentRecord {
@@ -9,7 +10,7 @@ public class Assessment_2 {
         String studentId;
         }
    public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
             String line;
             String unitName = null;
             

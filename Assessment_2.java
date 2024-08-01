@@ -5,7 +5,8 @@ import java.io.BufferedReader;
 public class Assessment_2 {
     
      static class StudentRecord {
-        
+        String fullName;
+        String studentId;
         }
    public static void main(String[] args) {
         String fileName = "prog5001_students_grade_2022.txt"; // Name of the file to read

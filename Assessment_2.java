@@ -21,9 +21,12 @@ public class Assessment_2 {
                 return;
             }
             // Reads the file and process student records
+            List<StudentRecord> studentRecords = new ArrayList<>();
         try (BufferedReader fileReader = new BufferedReader(new FileReader(filename))) {
             String line;
             String unitName = null;
+            
+            
             
             if ((line = reader.readLine()) != null) {
                 unitName = line.split(":")[1].trim();

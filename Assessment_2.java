@@ -11,6 +11,8 @@ public class Assessment_2 {
         }
    public static void main(String[] args) {
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
+            System.out.print("Please enter the name of the text file: ");
+            
             String line;
             String unitName = null;
             

@@ -30,11 +30,10 @@ public class Assessment_2 {
              if ((line = fileReader.readLine()) != null) {
                 // Extracts the unit name for the first line
                 if (line.startsWith("Unit,")) {
-                unitName = line.substring("Unit,".length()).trim();
-                System.out.println("Unit Name: " + unitName);
+                    unitName = line.substring("Unit,".length()).trim();
+                    System.out.println("Unit Name: " + unitName);
             }else {
                  System.out.println("The file is empty or is wrongly formatted.");
-                return;
             }
             
             

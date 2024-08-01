@@ -28,6 +28,8 @@ public class Assessment_2 {
             
             //Read the first line to get the unit name
              if ((line = fileReader.readLine()) != null) {
+                // Extracts the unit name for the first line
+                if (line.startsWith("Unit,")) {
                 unitName = line.split(":")[1].trim();
                 System.out.println("Unit Name: " + unitName);
             }else {

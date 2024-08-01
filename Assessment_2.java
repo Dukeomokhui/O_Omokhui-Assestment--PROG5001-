@@ -100,6 +100,12 @@ public class Assessment_2 {
         // Prompt the user for a threshold value
         System.out.print("\nEnter the threshold for total marks: ");
             double threshold;
+            try {
+                threshold = Double.parseDouble(consoleReader.readLine().trim());
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid threshold value. Exiting...");
+                return;
+            }
         }
     }
 }

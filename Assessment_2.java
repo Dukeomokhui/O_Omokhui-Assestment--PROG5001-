@@ -106,6 +106,11 @@ public class Assessment_2 {
                 System.out.println("Invalid threshold value. Exiting...");
                 return;
             }
+            
+        // Print students with total marks below the threshold
+        System.out.println("\nStudents with total marks less than " + threshold + ":");
+        System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
+                    "Name", "Student ID", "A1", "A2", "A3", "Total");
         }
     }
 }

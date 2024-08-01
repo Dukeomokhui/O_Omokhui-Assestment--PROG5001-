@@ -44,7 +44,10 @@ public class Assessment_2 {
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                         "Name", "Student ID", "A1", "A2", "A3", "Total"); // Print out String in a specific format
             
-            
+            // Skip comment lines and empty lines
+            if (line.trim().isEmpty() || line.trim().startsWith("#")) {
+                        continue;
+                    }
     }    catch (IOException e) {
             System.err.println("An error occurred while reading the file: " + e.getMessage());
         }

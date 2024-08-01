@@ -9,6 +9,10 @@ public class Assessment_2 {
      static class StudentRecord {
         String fullName;
         String studentId;
+        double mark1;
+        double mark2;
+        double mark3;
+        double total;
         }
    public static void main(String[] args) {
         // Create BufferedReader to read input from the console

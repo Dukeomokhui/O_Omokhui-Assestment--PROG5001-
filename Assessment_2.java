@@ -62,6 +62,10 @@ public class Assessment_2 {
                 if (line.trim().isEmpty() || line.trim().startsWith("#")) {
                         continue;
                     }
+                    
+                // Split the line by commas
+                String[] parts = line.split(",");
+                    
     }    catch (IOException e) {
             System.err.println("An error occurred while reading the file: " + e.getMessage());
         }

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 
 public class Assessment_2 {
    public static void main(String[] args) {
-        String fileName = "prog5001_students_grade_2022"; // Name of the file to read
+        String fileName = "prog5001_students_grade_2022.txt"; // Name of the file to read
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
             String unitName = null;
@@ -20,7 +20,7 @@ public class Assessment_2 {
              System.out.println("Student Marks:");
              while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(":");
-                if (parts.length == 5) {
+                if (parts.length == 2) {
                     String studentName = parts[0].trim();
                     String marks = parts[1].trim();
                     System.out.println(studentName + ": " + marks);

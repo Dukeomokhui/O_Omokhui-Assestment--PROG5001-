@@ -111,6 +111,13 @@ public class Assessment_2 {
         System.out.println("\nStudents with total marks less than " + threshold + ":");
         System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                     "Name", "Student ID", "A1", "A2", "A3", "Total");
+                    
+        for (StudentRecord record : studentRecords) {
+                if (record.total < threshold) {
+                    System.out.printf("%-30s %-10s %-5.1f %-5.1f %-5.1f %-7.1f%n",
+                            record.fullName, record.studentId, record.mark1, record.mark2, record.mark3, record.total);
+                }
+            }
         }
     }
 }

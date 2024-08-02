@@ -140,7 +140,7 @@ public class Assessment_2 {
             System.out.println("\nTop 5 Students with Highest Total Marks:");
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                     "Name", "Student ID", "A1", "A2", "A3", "Total");
-        
+            printTopNStudents(studentRecords, 5);
                     
             // Sort student records by total marks using Selection algorithm
             Selectx(studentRecords, false);  // Sort in ascending order for bottom 5
@@ -149,6 +149,8 @@ public class Assessment_2 {
             System.out.println("\nTop 5 Students with Lowest Total Marks:");
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                     "Name", "Student ID", "A1", "A2", "A3", "Total");
+            printTopNStudents(studentRecords, 5);
+            
         } catch (IOException e) {
             System.err.println("Error reading input: " + e.getMessage());
         }

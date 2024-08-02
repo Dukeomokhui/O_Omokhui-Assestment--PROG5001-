@@ -35,6 +35,7 @@ public class Assessment_2 {
             return 0.0;
         }
     }
+    
    public static void main(String[] args) {
         // Create BufferedReader to read input from the console
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
@@ -139,6 +140,23 @@ public class Assessment_2 {
             System.err.println("Error reading input: " + e.getMessage());
         }
     
+    }
+    // Selection algorithm to sort student records
+    private static void Selectx(List<StudentRecord> list, boolean descending) {
+        int n = list.size();
+        for (int i = 0; i < n - 1; i++) {
+            int indexToSwap = i;
+            for (int j = i + 1; j < n; j++) {
+                if ((descending && list.get(j).total > list.get(indexToSwap).total) ||
+                        (!descending && list.get(j).total < list.get(indexToSwap).total)) {
+                    indexToSwap = j;
+                }
+            }
+            // Swap the found minimum/maximum element with the first element
+            StudentRecord temp = list.get(indexToSwap);
+            list.set(indexToSwap, list.get(i));
+            list.set(i, temp);
+        }
     }
 }
 

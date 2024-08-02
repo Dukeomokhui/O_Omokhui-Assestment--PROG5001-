@@ -1,5 +1,7 @@
 #BlueJ class context
 comment0.target=Assessment_2
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment1.params=mark
+comment1.target=double\ parseMark(java.lang.String)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

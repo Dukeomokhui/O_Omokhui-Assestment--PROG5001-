@@ -1,0 +1,60 @@
+Unit,Fundamentals of Programming
+Last Name,First Name,Student ID,A1,A2,A3
+Karki,Aanchal,23851391,27,18.5,24.5
+Olda,Aayush,23038615,21,0,0
+Shrestha,Abdul,23391716,16.5,15,37.5
+Srinivasan,Abhishek,23614646,26.5,17.5,25.5
+Tarun,Abir,22966689,28,15.5,28
+Khan,Adrian,23859696,19,21,25
+Lamahewage Gunawardena,Ahmad,23770234,18.5,15.5,34
+Mahmud Zihad,Arshdeep,23802603,27,20.5,20
+Singh,Aydin,23135257,16.5,24,26.5
+Singh,Benjamin,23718881,26,18.5,28
+Valencia,Bilal,23331495,26.5,19.5,27
+Wijayawardhana Don,Bina,23590115,20,22,30
+Hajiyev,Chamin,23670127,21.5,26.5,30.5
+Ochieng,Chanuda,23541977,18.5,25.5,33.5
+Philip,Christapher,23714397,25,18.5,31.5
+Singh,Dilshani,23227112,28,25,29.5
+Stiles,Elijah,22598943,20,24,38.5
+Aujayeb,Gregory,23692215,21,3,
+Bajwa,Gurpreet Singh,23858363,14,5,1
+Tusher,Harshika,22933269,19.5,6,8
+Borowiak,Huanghao,23820553,28,26.5,36.5
+Vuia,Japharsimran,23310818,26,25.5,38.5
+Hollstein,Jinal,22174136,28,21.5,38.5
+Reva,Karandeep,23791507,29,26.5,30.5
+Ross,Kunal,22677509,28,23,34
+Salo,Lara,23092268,30,28,37
+Arava,Loa,23340831,11.5,20.5,23.5
+Arava,Mailanamo,23343746,12.5,21,25
+Eva,Md,23607303,18.5,18,21.5
+Iru,Md,23585988,15,19.5,21
+Khan,Milan,23197192,9.5,21,24.5
+Singh,Muhammad,22937504,9.5,25,21
+Aanchal,Namrata,23731723,11,12.5,27.5
+Akbar,Nikhal,23316337,17,23.5,11
+Fuhaduzzaman,Pardeep,23502424,4,26.5,22.5
+Li,Pavithra,23451429,8,26,20
+Li,Priyanka,23115576,12,13,27.5
+Vring,Renz,23057393,22.5,11,20
+Chaudhary,Ritesh,23628113,20,20.5,21
+Jaiswal,Sabbir,22800745,19,17,
+Khan,Sabin,23176450,15,25,22
+Ponnamperuma Arachchige,Saeed,23727638,18.5,12.5,29
+Pudasaini,Sandula,23511679,21.5,16.5,24.5
+Saha,Shahzeb,23534113,18,24,20.5
+Singh,Simran,23648315,21.5,18,22
+Toqi,Sinia,23597048,21.5,19,21.5
+Al Kaabi,Sk,22626666,16,10,19.5
+Ghatani,Steve,23771363,20,0,25.5
+Mainali,Tarun,23436154,9,17,15
+Nikhal,Travis,23841376,18.5,12,15
+Patel,Vagiaoma,23714892,14,20.5,11
+Singh,Vali,23129470,10,10,21
+Ayer,Veura,22683700,21.5,18,22
+Chandrasekara Mudiyanselage,Viraj,23727667,21.5,19,21.5
+Khoso,Yehan,23474015,16,10,19.5
+Pitigala Arachchilage,Yihang,23582963,20,0,25.5
+Sah,Zhenkun,22832353,15,25,22
+Zha,Zisun,23390166,18.5,12.5,29

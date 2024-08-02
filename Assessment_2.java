@@ -26,7 +26,7 @@ public class Assessment_2 {
             this.total = total;
         }
     }
-     // Helper method to parse and handle missing values
+     // Helper method to parse and handle missing values in the text file
     private static double parseMark(String mark) {
         try {
             return mark.isEmpty() ? 0.0 : Double.parseDouble(mark);
@@ -132,7 +132,9 @@ public class Assessment_2 {
                 }
             }
             
-            // start sorting in the morning
+            // Sort student records by total marks using Selection algorithm
+            Selectx(studentRecords, true);  // Sort in descending order for top 5
+
         } catch (IOException e) {
             System.err.println("Error reading input: " + e.getMessage());
         }

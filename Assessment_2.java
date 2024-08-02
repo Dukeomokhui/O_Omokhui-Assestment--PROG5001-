@@ -136,6 +136,11 @@ public class Assessment_2 {
             // Sort student records by total marks using Selection algorithm
             Selectx(studentRecords, true);  // Sort in descending order for top 5
 
+             // Print top 5 students with the highest total marks
+            System.out.println("\nTop 5 Students with Highest Total Marks:");
+            System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
+                    "Name", "Student ID", "A1", "A2", "A3", "Total");
+        
         } catch (IOException e) {
             System.err.println("Error reading input: " + e.getMessage());
         }

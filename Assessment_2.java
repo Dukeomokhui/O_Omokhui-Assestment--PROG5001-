@@ -24,6 +24,15 @@ public class Assessment_2 {
             this.total = total;
         }
     }
+     // Helper method to parse and handle missing values
+    private static double parseMark(String mark) {
+        try {
+            return mark.isEmpty() ? 0.0 : Double.parseDouble(mark);
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid mark format: " + mark);
+            return 0.0;
+        }
+    }
    public static void main(String[] args) {
         // Create BufferedReader to read input from the console
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
@@ -46,10 +55,11 @@ public class Assessment_2 {
                 if (line.startsWith("Unit,")) {
                     unitName = line.substring("Unit,".length()).trim();
                     System.out.println("Unit Name: " + unitName);
-            }else {
+                }else {
                  System.out.println("The file is empty or is wrongly formatted.");
+                }
             }
-            
+            // Reads the header line
             if ((line = fileReader.readLine()) != null) {
                     // Assuming the header line is properly formatted and can be skipped
                 }
@@ -57,6 +67,7 @@ public class Assessment_2 {
             System.out.println("\nStudent Records:");
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                         "Name", "Student ID", "A1", "A2", "A3", "Total"); // Print out String in a specific format
+                        
             while ((line = fileReader.readLine()) != null) {
             // Skip comment lines and empty lines
                 if (line.trim().isEmpty() || line.trim().startsWith("#")) {
@@ -91,8 +102,8 @@ public class Assessment_2 {
                     } else {
                         System.out.println("Unexpected format for student record: " + line);
                     }
-            }
-        } catch (IOException e) {
+                }
+            } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
             return;
             }
@@ -120,7 +131,10 @@ public class Assessment_2 {
             }
             
             // start sorting in the morning
+        } catch (IOException e) {
+            System.err.println("Error reading input: " + e.getMessage());
         }
+    
     }
 }
 

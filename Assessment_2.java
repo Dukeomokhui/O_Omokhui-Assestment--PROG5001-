@@ -171,5 +171,19 @@ public class Assessment_2 {
             list.set(i, temp);
         }
     }
+    
+    // Helper method to print top N students from a sorted list
+    private static void printTopNStudents(List<StudentRecord> sortedRecords, int topN) {
+        int count = 0;
+        for (StudentRecord record : sortedRecords) {
+            if (count < topN) {
+                System.out.printf("%-30s %-10s %-5.1f %-5.1f %-5.1f %-7.1f%n",
+                        record.fullName, record.studentId, record.mark1, record.mark2, record.mark3, record.total);
+                count++;
+            } else {
+                break;
+            }
+        }
+    }
 }
 

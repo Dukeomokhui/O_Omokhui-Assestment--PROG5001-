@@ -68,8 +68,9 @@ public class Assessment_2 {
             if ((line = fileReader.readLine()) != null) {
                     // Assuming the header line is properly formatted and can be skipped
                 }
-            // Process student records
+            // Process student records from the file
             System.out.println("\nStudent Records:");
+            // Print table header for student records
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                         "Name", "Student ID", "A1", "A2", "A3", "Total"); // Print out String in a specific format
                         

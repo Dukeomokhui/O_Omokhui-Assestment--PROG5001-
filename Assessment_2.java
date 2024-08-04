@@ -100,7 +100,7 @@ public class Assessment_2 {
                     double mark3 = parseMark(a3);
                     double total = mark1 + mark2 + mark3;
                     
-                    // Add student record to the list
+                    // Create a StudentRecord object and add it to the list
                     studentRecords.add(new StudentRecord(
                                 firstName + " " + lastName, studentId, mark1, mark2, mark3, total));
                                 
@@ -108,6 +108,7 @@ public class Assessment_2 {
                     System.out.printf("%-30s %-10s %-5.1f %-5.1f %-5.1f %-7.1f%n",
                                 firstName + " " + lastName, studentId, mark1, mark2, mark3, total);
                     } else {
+                        // Print an error message if the line format is unexpected
                         System.out.println("Unexpected format for student record: " + line);
                     }
                 }

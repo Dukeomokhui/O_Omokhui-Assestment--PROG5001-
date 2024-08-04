@@ -73,7 +73,8 @@ public class Assessment_2 {
             // Print table header for student records
             System.out.printf("%-30s %-10s %-5s %-5s %-5s %-7s%n",
                         "Name", "Student ID", "A1", "A2", "A3", "Total"); // Print out String in a specific format
-                        
+            
+            // Read each line and create StudentRecord objects
             while ((line = fileReader.readLine()) != null) {
             // Skip comment lines and empty lines
                 if (line.trim().isEmpty() || line.trim().startsWith("#")) {
@@ -85,6 +86,7 @@ public class Assessment_2 {
                 
                 // Check if the line has the expected number of parts
                 if (parts.length >= 5) {
+                    // Extract and trim student data from the parts
                     String lastName = parts[0].trim();
                     String firstName = parts[1].trim();
                     String studentId = parts[2].trim();
@@ -92,7 +94,7 @@ public class Assessment_2 {
                     String a2 = parts[4].trim();
                     String a3 = (parts.length > 5) ? parts[5].trim() : "";
 
-                     // Parse marks and calculate total
+                    // Parse marks and calculate total
                     double mark1 = parseMark(a1);
                     double mark2 = parseMark(a2);
                     double mark3 = parseMark(a3);

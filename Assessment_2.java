@@ -171,11 +171,12 @@ public class Assessment_2 {
     private static void Selectx(List<StudentRecord> list, boolean descending) {
         int n = list.size();
         for (int i = 0; i < n - 1; i++) {
-            int indexToSwap = i;
+            int indexToSwap = i;    // Assume the element at index i is the one to swap
             for (int j = i + 1; j < n; j++) {
+                // Compare elements based on sorting order (descending or ascending)
                 if ((descending && list.get(j).total > list.get(indexToSwap).total) ||
                         (!descending && list.get(j).total < list.get(indexToSwap).total)) {
-                    indexToSwap = j;
+                    indexToSwap = j;    // Update indexToSwap if a new min/max is found
                 }
             }
             // Swap the found minimum/maximum element with the first element

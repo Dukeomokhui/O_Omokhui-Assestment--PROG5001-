@@ -17,7 +17,7 @@ public class Assessment_2 {
         double mark3;   // Marks for assessment 3
         double total;   // Total marks (sum of mark1, mark2, and mark3)
         
-            
+        // Constructor to initialize the student record    
         StudentRecord(String fullName, String studentId, double mark1, double mark2, double mark3, double total) {
             this.fullName = fullName;
             this.studentId = studentId;
@@ -43,9 +43,10 @@ public class Assessment_2 {
             System.out.print("Please enter the name of the text file: "); // Gets the filename
             String filename = consoleReader.readLine().trim();// Stores the value in a string. Trims the input of unnecessary spaces
             
+             // Check if the filename is empty
             if (filename.isEmpty()) {
                 System.out.println("No filename provided. Exiting..."); // Error check if there is no input provided
-                return;
+                return; // Exit if no filename is provided
             }
             // Reads the file and process student records
             List<StudentRecord> studentRecords = new ArrayList<>();

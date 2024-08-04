@@ -8,13 +8,14 @@ import java.util.List;
 
 public class Assessment_2 {
     
+    // Static class to hold student record data
      static class StudentRecord {
-        String fullName;
-        String studentId;
-        double mark1;
-        double mark2;
-        double mark3;
-        double total;
+        String fullName;     // Full name of the student
+        String studentId;   // Student ID
+        double mark1;   // Marks for assessment 1
+        double mark2;   // Marks for assessment 2
+        double mark3;   // Marks for assessment 3
+        double total;   // Total marks (sum of mark1, mark2, and mark3)
         
             
         StudentRecord(String fullName, String studentId, double mark1, double mark2, double mark3, double total) {

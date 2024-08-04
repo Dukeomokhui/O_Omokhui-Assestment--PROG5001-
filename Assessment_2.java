@@ -30,8 +30,10 @@ public class Assessment_2 {
      // Helper method to parse and handle missing values in the text file
     private static double parseMark(String mark) {
         try {
+            // Return 0.0 if the mark is empty; otherwise, parse the mark as a double
             return mark.isEmpty() ? 0.0 : Double.parseDouble(mark);
         } catch (NumberFormatException e) {
+            // Handle invalid mark format and return 0.0
             System.err.println("Invalid mark format: " + mark);
             return 0.0;
         }
@@ -113,6 +115,7 @@ public class Assessment_2 {
                     }
                 }
             } catch (IOException e) {
+            // Handle file reading errors
             System.err.println("Error reading file: " + e.getMessage());
             return;
             }
@@ -121,8 +124,10 @@ public class Assessment_2 {
         System.out.print("\nEnter the threshold for total marks: ");
             double threshold;
             try {
+                // Read and parse the threshold value
                 threshold = Double.parseDouble(consoleReader.readLine().trim());
             } catch (NumberFormatException e) {
+                // Read and parse the threshold value
                 System.out.println("Invalid threshold value. Exiting...");
                 return;
             }
@@ -189,7 +194,7 @@ public class Assessment_2 {
                         record.fullName, record.studentId, record.mark1, record.mark2, record.mark3, record.total);
                 count++;
             } else {
-                break;
+                break;  // Stop printing after the top N students are displayed
             }
         }
     }
